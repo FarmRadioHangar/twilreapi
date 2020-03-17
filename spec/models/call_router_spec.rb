@@ -164,6 +164,66 @@ describe CallRouter do
         dial_string_path: "external/252642345678@41.78.73.242"
       )
 
+      # Ghana (Globacom)
+      call_router.destination = "+233232437103"
+
+      result = call_router.routing_instructions
+
+      assert_routing_instructions!(
+        result,
+        source: "5555",
+        destination: "233232437103",
+        dial_string_path: "external/233232437103@154.160.70.82"
+      )
+
+      # Ghana (MTN)
+      call_router.destination = "+233242437103"
+
+      result = call_router.routing_instructions
+
+      assert_routing_instructions!(
+        result,
+        source: "5555",
+        destination: "233242437103",
+        dial_string_path: "external/233242437103@154.160.70.82"
+      )
+
+      # Ghana (AirtelTigo)
+      call_router.destination = "+233272437103"
+
+      result = call_router.routing_instructions
+
+      assert_routing_instructions!(
+        result,
+        source: "5555",
+        destination: "233272437103",
+        dial_string_path: "external/233272437103@154.160.70.82"
+      )
+
+      # Ghana (Expresso)
+      call_router.destination = "+233282437103"
+
+      result = call_router.routing_instructions
+
+      assert_routing_instructions!(
+        result,
+        source: "5555",
+        destination: "233282437103",
+        dial_string_path: "external/233282437103@154.160.70.82"
+      )
+
+      # Ghana (Vodaphone)
+      call_router.destination = "+233202437103"
+
+      result = call_router.routing_instructions
+
+      assert_routing_instructions!(
+        result,
+        source: "5555",
+        destination: "233202437103",
+        dial_string_path: "external/233202437103@154.160.70.82"
+      )
+
       # Brazil
       call_router.destination = "+5582999489999"
 

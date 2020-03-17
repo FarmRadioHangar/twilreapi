@@ -66,3 +66,30 @@ so:
         gateways:
           default:
             host: "41.78.73.242"
+gh:
+  operators:
+    globacom:
+      metadata:
+        gateways:
+          default:
+            host: "154.160.70.82"
+    mtn:
+      metadata:
+        gateways:
+          default:
+            host: "154.160.70.82"
+    airtel_tigo:
+      metadata:
+        gateways:
+          default:
+            host: "154.160.70.82"
+    expresso:
+      metadata:
+        gateways:
+          default:
+            host: "154.160.70.82"
+    vodafone:
+      metadata:
+        gateways:
+          default:
+            host: "154.160.70.82"
